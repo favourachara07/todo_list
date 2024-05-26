@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Logo from "../assets/ava.jpg"
 
 export default function Header() {
   const [theme, setTheme] = useState(JSON.parse(localStorage.getItem("theme")) || "medium")
@@ -11,7 +12,7 @@ export default function Header() {
   return (
     <header>
       <div className="logo">
-        <img src="" alt="taskmate logo" />
+        <img src={Logo} alt="taskmate logo" />
         <span>Taskmate</span>
       </div>
       <div className="themeSelector">
